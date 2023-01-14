@@ -21,7 +21,7 @@ body {
     width: 100%;
     height: 1330px;
     background-color: #FF900E1A;
-    
+
 
 }
 
@@ -78,27 +78,30 @@ body {
     margin-bottom: 20px;
 
 }
+
 .button-explore {
 
     padding-bottom: 20px;
     text-align: center;
 }
+
 .btn-explore {
     font-size: 18px;
     background: #FF900E;
     padding: 10px 24px;
-    border-radius: 8px ;
+    border-radius: 8px;
     color: white;
     border: 3px solid #FF900E;
     text-align: center;
-    
+
 
 }
-.banner{
+
+.banner {
     text-align: center;
 }
 
-.banner img{
+.banner img {
     margin: auto;
 
 
@@ -106,55 +109,249 @@ body {
 
 
 /* section one with some images and text */
-.section-one{
+.section-one {
     width: 100%;
     height: 750px;
     padding-top: 84px;
     padding-bottom: 84px;
-    margin-left: 200px;
-    margin-right: 200px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
     /* margin: auto; */
     display: flex;
-    gap: 90px;
-    align-items: center;
-    
+    gap: 30px;
+    /* align-items: center; */
+    justify-content: space-evenly;
+
 }
-.images-for-grid{
+
+.images-for-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 20px;
 }
-.feature-and-button{
-    margin-top: 10px;
+
+.feature-and-button {
+    margin-top: 170px;
+    margin-left: 30px;
 }
-.feature-heading{
+
+.feature-heading {
     font-size: 45px;
 }
-#quick{
-  font-weight: 500;
-  color: #727272;
+
+#quick {
+    font-weight: 500;
+    color: #727272;
 }
-#of-our{
+
+#of-our {
     font-weight: 700;
     color: #131313;
 }
-#features{
+
+#features {
     color: #FF900E;
     font-weight: 700;
 }
-.section-one-para{
+
+.section-one-para {
     color: #727272;
     margin-top: 24px;
     margin-bottom: 32px;
 }
-.btn-explore-more{
+
+.btn-explore-more {
     font-size: 18px;
     background: #FF900E;
     padding: 10px 24px;
-    border-radius: 8px ;
+    border-radius: 8px;
     color: white;
     border: 3px solid #FF900E;
 }
 
 
+
+/* section two with features description and a girl image */
+.section-two {
+    margin-top: 60px;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    gap: 54px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.text-of-section-two {
+    width: 575px;
+}
+
+.section-two-heading {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    width: 486px;
+    height: 105px;
+    padding-top: 10px;
+    padding-bottom: 23px;
+}
+
+.section-two-para {
+    color: #727272;
+    width: 575px;
+    padding-bottom: 30px;
+
+}
+
+.for-flex-sec-two {
+    width: 575px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+
+}
+
+.feature-box {
+    width: 514px;
+    height: 110px;
+    padding: 29px 30px;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.inner-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+
+}
+
+.inner-para {
+    width: 514px;
+    color: #727272;
+
+}
+
+.for-girl { 
+    width: 800px;
+    height: 1058px;
+    border: 4px solid rgb(255, 255, 255);
+    position: relative;
+}
+.for-girl img {
+    width: 575px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn-ex{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    float: right;
+    font-size: 25px;
+    font-size: 18px;
+    background: #FF900E;
+    padding: 10px 24px;
+    border-radius: 8px;
+    color: white;
+    border: 3px solid #FF900E;
+    text-align: center;
+}
+.biggie{
+    font-size: 60px;
+}
+
+
+/* section three */
+.section-three{
+    border: 40px solid white;
+    margin-top: 600px;
+    
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries here  */
+@media only screen and (max-width: 578px){
+    /* for header  */
+    .header{
+        height: auto;
+        justify-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar{
+        padding: 0;
+        margin: 0;
+        width: 570px;
+        padding-top: 6px;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+
+    }
+    .company-name {
+        font-weight: 600;
+        font-size: 25px;
+        color: #131313;
+        text-align: start;
+    }
+    .navbar ul{
+        margin-top: 10px;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+
+
+    
+    /* all section one media queries  */
+    .section-one{
+        flex-direction: column;
+        padding-top: 20px;
+        
+        padding: 0px;
+        height: auto;
+    }
+    .images-for-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;;
+        padding: 0px;
+        justify-items: center;
+    }
+    .images-for-grid img {
+        display: grid;
+    }
+    .feature-and-button{
+        margin-top: 10px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+    .section-two, .section-three{
+        display: none;
+    }
+}
