@@ -234,19 +234,21 @@ body {
 
 }
 
-.for-girl { 
+.for-girl {
     width: 800px;
     height: 1058px;
     border: 4px solid rgb(255, 255, 255);
     position: relative;
 }
+
 .for-girl img {
     width: 575px;
     position: absolute;
     top: 0;
     right: 0;
 }
-.btn-ex{
+
+.btn-ex {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -260,23 +262,103 @@ body {
     border: 3px solid #FF900E;
     text-align: center;
 }
-.biggie{
+
+.biggie {
     font-size: 60px;
 }
 
 
 /* section three */
-.section-three{
+.section-three {
     border: 40px solid white;
     margin-top: 600px;
-    
+    margin-bottom: 200px;
     width: 100%;
     height: 250px;
+    padding-left: 220px;
+}
+
+.heading-secthree {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+.section-three-para {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* section  four styles here  */
+.section-four {
+    width: 100%;
+    height: 260px;
+    margin: auto;
+    margin-right: 300px;
+    margin-left: 300px;
+    justify-content: center;
+}
+.all-success {
+    display: flex;
+    gap: 130px;
+  
+}
+.border-success {
+    height: 241px;
+    width: 241px;
+    border: 1px solid #FF900E;
+    border-radius: 7px;
+}
+.border-success:hover{
+    transform: rotatez(30deg);
+}
+.inner-success {
+    width: 169px;
+    height: 136px;
+    padding: 50px;
+    margin: auto;
+}
+
+.inner-success:hover{
+    color: rgb(213, 0, 0);
+}
+.inner-success img {
+    margin: 0 45px;
+}
+.inner-success img:hover{
+    transform: rotate(-46deg);
+}
+.inner-success .number {
+    font-size: 30px;
+    margin: 10px 50px 5px;
+}
+.inner-success .inner-para {
+    font-size: 20px;
 }
 
 
 
 
+
+/* section five sponsors section  */
+.section-five{
+    width: 500px;
+    height: 130px;
+    margin-top: 100px;
+    justify-content: ;
+}
+.sponspors{
+
+}
+.sponspors-heading{
+
+}
+.sponspors-para{
+
+}
 
 
 
@@ -288,15 +370,19 @@ body {
 
 
 /* media queries here  */
-@media only screen and (max-width: 578px){
+@media only screen and (max-width: 578px) {
+
     /* for header  */
-    .header{
+    .header {
+        width: 100%;
         height: auto;
         justify-items: center;
         padding: 0;
         margin: 0;
+        background-color: #e0cc15d0;
     }
-    .navbar{
+
+    .navbar {
         padding: 0;
         margin: 0;
         width: 570px;
@@ -304,41 +390,80 @@ body {
         flex-direction: column;
         align-content: space-around;
         align-items: center;
+        text-align: center;
+        justify-content: center;
 
     }
+
     .company-name {
         font-weight: 600;
         font-size: 25px;
         color: #131313;
         text-align: start;
+
     }
-    .navbar ul{
+
+    .navbar ul {
         margin-top: 10px;
         flex-direction: row;
         column-gap: 10px;
     }
 
+    .navbar ul li {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .header-text {
+        width: 460px;
+    }
+
+    .header-heading {
+
+        font-size: 34px;
+        padding-top: 100px;
+        padding-bottom: 24px;
+        width: 444px;
+        text-align: center;
+    }
+
+    .header-paragraph {
+        width: 400px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .banner img {
+        width: 400px;
+    }
 
 
-    
     /* all section one media queries  */
-    .section-one{
+    .section-one {
         flex-direction: column;
         padding-top: 20px;
-        
+
         padding: 0px;
         height: auto;
     }
+
     .images-for-grid {
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;;
+        width: 100%;
+        ;
         padding: 0px;
         justify-items: center;
     }
+
     .images-for-grid img {
         display: grid;
     }
-    .feature-and-button{
+
+    .feature-and-button {
         margin-top: 10px;
         margin-left: 0px;
         text-align: center;
@@ -346,12 +471,17 @@ body {
 
 
 
+    /* section two starts here  */
 
 
 
 
 
-    .section-two, .section-three{
+
+
+
+    .section-two,
+    .section-three {
         display: none;
     }
 }
